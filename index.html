@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Simulator</title>
+
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="shortcut icon" href="./src/images/favicon.ico.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:
+    ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Piano Simulator</h2>
+            <div class="column volume-slider">
+                <span>Volume</span> <input type="range"
+                min="0" max="1" value="0.5" step="any">
+            </div>
+            <div class="column keys-check">
+                <span>Keys</span> <input type="checkbox" checked>
+            </div>   
+        </header>
+        <ul class="piano-keys" id="key-box">
+        </ul>
+        <h6><a class="link" href="http://github.com/bttand" target="_blank">Breno Andrade</a></h6>
+        <h6> Try: [Q - Q - T] or [X - V - M] or [Q - Q - W]</h6>
+    </div>
+    <script src="./src/scripts/engine.js" defer></script>
+</body>
+</html>
